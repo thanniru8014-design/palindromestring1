@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Palindrome Deletion Calculator</h1>
+  <input type="text" [(ngModel)]="inputString" placeholder="Enter a string" />
+  <button (click)="calculate()">Calculate Minimum Deletions</button>
+  @if (result !== null) {
+    <p>Minimum deletions: {{ result }}</p>
+  }
+</div>
+<router-outlet />
